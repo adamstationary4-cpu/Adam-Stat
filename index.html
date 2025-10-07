@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ADAM STATIONARY Website</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />  
+  <title>ADAM STATIONARY. — Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="video-background">
+  <video autoplay muted loop playsinline>
+    <source src="videos/abstract-network.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUW8h3LqAsEJD-jhrvTCHtDgSSVlCaX5WZMbxzJbqbaZM0L2rE=s265-w265-h265" alt="Adam Stationery Logo" class="logo" />
+        <span class="brand-text">ADAM STATIONARY.</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="order.html" class="nav-link">Order</a>
+        <a href="requests.html" class="nav-link">Requests</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button id="cartBtn" class="cart-btn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Quality Stationery, Affordable Prices</h1>
+          <p>Your one-stop shop for office, school and printing supplies. Fast service • Trusted quality • Local delivery</p>
+          <div class="hero-ctas">
+            <a class="btn" href="products.html">Shop Now</a>
+            <a class="btn outline" href="order.html">Place Order</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjUW8h3LqAsEJD-jhrvTCHtDgSSVlCaX5WZMbxzJbqbaZM0L2rE=s265-w265-h265" alt="Adam Stationery" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Short intro -->
+    <section class="container intro">
+      <h2>Who we are</h2>
+      <p>Adam Stationary — started to serve individuals, schools and businesses with trusted stationery and print solutions. We focus on quality, honest prices and fast local delivery.</p>
+    </section>
+
+    <!-- Featured products -->
+    <section class="container featured">
+      <h2>Featured Products</h2>
+      <div id="featuredGrid" class="products-grid">
+        <!-- JS will inject a few featured product cards from products list -->
+      </div>
+      <div class="center"><a href="products.html" class="btn">See All Products</a></div>
+    </section>
+
+    <!-- Quick links -->
+    <section class="container quick-links">
+      <div class="grid-3">
+        <a href="order.html" class="card-link">
+          <h3>Order Now</h3>
+          <p>Simple online form & multiple payment options.</p>
+        </a>
+        <a href="requests.html" class="card-link">
+          <h3>Custom Requests</h3>
+          <p>Printing, binding, business cards, invites & more.</p>
+        </a>
+        <a href="contact.html" class="card-link">
+          <h3>Contact Us</h3>
+          <p>WhatsApp, call or visit our shop. Open daily.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container testimonials">
+      <h2>What Our Customers Say</h2>
+      <blockquote>
+        <p>"Fast service and great prices — they printed our event posters same-day." — Neema, Dar</p>
+      </blockquote>
+      <blockquote>
+        <p>"Always the first place school parents ask about notebooks and supplies." — John</p>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Adam Stationary</h4>
+        <p>Visit us or call: <strong>0672 605 977</strong></p>
+        <p>WhatsApp: <a href="https://wa.me/255757018884">0757 018 884</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><br/>
+        <a href="products.html">Products</a><br/>
+        <a href="services.html">Services</a><br/>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="https://www.instagram.com/adam.stationaryas/" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="container copyright">
+      © <span id="year"></span> Adam Stationary — All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Adam Stationary</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUW8h3LqAsEJD-jhrvTCHtDgSSVlCaX5WZMbxzJbqbaZM0L2rE=s265-w265-h265" alt="Adam Stationery Logo" class="logo" />
+        <span class="brand-text">Adam Stationary</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="order.html" class="nav-link">Order</a>
+        <a href="requests.html" class="nav-link">Requests</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button id="cartBtn" class="cart-btn">Cart (<span id="cartCountTop">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Our Stationery Collection</h1>
+
+    <div class="products-toolbar">
+      <input id="searchInput" type="search" placeholder="Search products (e.g. pen, A4)" />
+      <select id="categoryFilter">
+        <option value="">All categories</option>
+        <option>Writing & Drawing</option>
+        <option>Paper & Books</option>
+        <option>Printing & Copy Supplies</option>
+        <option>School Supplies</option>
+        <option>Office Essentials</option>
+      </select>
+    </div>
+
+    <div id="productsGrid" class="products-grid">
+      <!-- JS will populate product cards here. Add your product images by editing product objects in script.js -->
+    </div>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container copyright">
+      © <span id="year2"></span> Adam Stationary
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Place Your Order — Adam Stationary</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUW8h3LqAsEJD-jhrvTCHtDgSSVlCaX5WZMbxzJbqbaZM0L2rE=s265-w265-h265" alt="logo" class="logo" /><span class="brand-text">Adam Stationary</span></a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="order.html" class="nav-link active">Order</a>
+        <a href="requests.html" class="nav-link">Requests</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Place Your Order</h1>
+
+    <section class="order-section">
+      <h2>Order Form</h2>
+      <form id="orderForm">
+        <div class="form-row">
+          <label for="custName">Full name</label>
+          <input id="custName" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="custPhone">Phone / WhatsApp</label>
+          <input id="custPhone" name="phone" required />
+        </div>
+        <div class="form-row">
+          <label for="custAddress">Delivery address (or write "pickup")</label>
+          <input id="custAddress" name="address" required />
+        </div>
+
+        <div class="form-row">
+          <label for="orderItems">Order details (or paste cart)</label>
+          <textarea id="orderItems" placeholder="e.g. 10 x A4 paper reams, 5 x blue pens" rows="4"></textarea>
+        </div>
+
+        <fieldset class="payment">
+          <legend>Payment options</legend>
+          <label><input type="radio" name="payment" value="cash" checked /> Cash on delivery</label>
+          <label><input type="radio" name="payment" value="mpesa" /> M-Pesa</label>
+          <label><input type="radio" name="payment" value="tigo" /> Tigo Pesa</label>
+          <label><input type="radio" name="payment" value="airtel" /> Airtel Money</label>
+          <label><input type="radio" name="payment" value="bank" /> Bank transfer</label>
+        </fieldset>
+
+        <div class="form-row">
+          <label><input type="checkbox" id="deliveryOpt" /> I want delivery (local charges may apply)</label>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn">Submit Order</button>
+          <button type="button" class="btn outline" id="clearCartBtn">Clear Cart</button>
+        </div>
+
+        <p id="orderMsg" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container copyright">© <span id="year3"></span> Adam Stationary</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Custom Orders & Requests — Adam Stationary</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUW8h3LqAsEJD-jhrvTCHtDgSSVlCaX5WZMbxzJbqbaZM0L2rE=s265-w265-h265" alt="logo" class="logo" /><span class="brand-text">Adam Stationary</span></a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="order.html" class="nav-link">Order</a>
+        <a href="requests.html" class="nav-link active">Requests</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Custom Orders & Requests</h1>
+    <p>We handle printing, binding, invitations, business cards, branding, rubber stamps, lamination and more. Fill the form below and we'll contact you with a quote.</p>
+
+    <form id="requestForm" class="request-form">
+      <div class="form-row">
+        <label for="reqName">Full name</label>
+        <input id="reqName" required />
+      </div>
+      <div class="form-row">
+        <label for="reqPhone">Phone/WhatsApp</label>
+        <input id="reqPhone" required />
+      </div>
+      <div class="form-row">
+        <label for="reqType">Type of request</label>
+        <select id="reqType">
+          <option>Document printing & binding</option>
+          <option>Business cards</option>
+          <option>Posters & flyers</option>
+          <option>Invitations & cards</option>
+          <option>Branding / Office stationery</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="reqDetails">Details / upload link</label>
+        <textarea id="reqDetails" rows="5" placeholder="Describe the job, quantity, sizes, colors. Paste a Google Drive/Dropbox link if you have files to upload."></textarea>
+      </div>
+
+      <div class="form-row">
+        <button class="btn" type="submit">Submit Request</button>
+      </div>
+
+      <p id="requestMsg" class="muted"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container copyright">© <span id="year4"></span> Adam Stationary</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Adam Stationary</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUW8h3LqAsEJD-jhrvTCHtDgSSVlCaX5WZMbxzJbqbaZM0L2rE=s265-w265-h265" alt="logo" class="logo" /><span class="brand-text">Adam Stationary</span></a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="order.html" class="nav-link">Order</a>
+        <a href="requests.html" class="nav-link">Requests</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Our Services</h1>
+    <ul class="services-list">
+      <li><strong>Printing:</strong> Color, B&W, photo printing, posters and flyers.</li>
+      <li><strong>Scanning & Copying:</strong> Documents, ID photos, lamination.</li>
+      <li><strong>Binding & Finishing:</strong> Thermal binding, spiral binding, trimming.</li>
+      <li><strong>Internet & Online Applications:</strong> Public internet, form filling.</li>
+      <li><strong>Money Agency (Wakala):</strong> Cash-in / cash-out, mobile money.</li>
+      <li><strong>Design & Editing:</strong> Small graphic design jobs, flyer templates, logos.</li>
+    </ul>
+    <p>For a quote or faster response, use <a href="requests.html">Custom Requests</a> or call/WhatsApp: <strong>0757 018 884</strong>.</p>
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container copyright">© <span id="year5"></span> Adam Stationary</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Adam Stationary</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUW8h3LqAsEJD-jhrvTCHtDgSSVlCaX5WZMbxzJbqbaZM0L2rE=s265-w265-h265" alt="logo" class="logo" /><span class="brand-text">Adam Stationary</span></a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="order.html" class="nav-link">Order</a>
+        <a href="requests.html" class="nav-link">Requests</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Get in Touch</h1>
+
+    <div class="grid-2 contact-grid">
+      <div>
+        <h2>Visit or Call Us</h2>
+        <p><strong>Address:</strong> Manzese(Tandale,sweetconer) Dar es salaam,Tanzania. </p>
+        <p><strong>Phone / WhatsApp:</strong> <a href="tel:0672605977">0672 605 977</a> • <a href="https://wa.me/255757018884">0757 018 884</a></p>
+        <p><strong>Opening hours:</strong> [24/7] Mon–Sun 8:00Am — 22:00Pm</p>
+      </div>
+
+      <div>
+        <h2>Send a message</h2>
+        <form id="contactForm">
+          <div class="form-row"><label for="cname">Name</label><input id="cname" required /></div>
+          <div class="form-row"><label for="cphone">Phone</label><input id="cphone" required /></div>
+          <div class="form-row"><label for="cmessage">Message</label><textarea id="cmessage" rows="5"></textarea></div>
+          <div class="form-row"><button class="btn" type="submit">Send Message</button></div>
+          <p id="contactMsg" class="muted"></p>
+        </form>
+      </div>
+    </div>
+
+    <h2>About Adam Stationary</h2>
+    <p>Started in 2022, we serve schools, offices and individuals with quality stationery, graphic and printing services. Our goal is to deliver great products and friendly service every time.</p>
+
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container copyright">© <span id="year6"></span> Adam Stationary</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<div class="video-background">
+  <video autoplay muted loop>
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay-content">
+    <h1>ADAM STATIONARY</h1>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
