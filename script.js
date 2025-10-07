@@ -1,26 +1,11 @@
 /* script.js — minimal frontend logic: products, cart in localStorage, forms */
 const products = [
   // Example products. Replace image paths and add more items.
-  { id: 'p1', title: 'Blue Ballpoint Pen', category: 'Writing & Drawing', price: 200, img: 'https://lh3.googleusercontent.com/p_hvW5CNkjeLjFtUJOXCksT_Y5CAk7OrIi_ja-sTZVM9Ov4twIs5CJAKEHJQDsTypZQsX48UFVrWAb3Q=s265-w265-h265' },
-  { id: 'p2', title: 'A4 Paper Ream (500 sheets)', category: 'Paper & Books', price: 13000, img: 'https://lh3.googleusercontent.com/VkCCClusnNjMKQvbgMtzYMY4fAhs8weCaPKqc1aruXVLvLmRX9JlYWouMpnT8wvf18p2MDd601zohpTM=s265-w265-h265' },
-  { id: 'p3', title: 'Notebook A5', category: 'Paper & Books', price: 8000, img: 'https://lh3.googleusercontent.com/hMSNb1XwkjmMfPJhnlsyfnEneplCn99KvaSrx3ZLqWLguxYAJwdtcIK4ipTKcL4nlRJpCCrc6I0HdSXD=s265-w265-h265' },
-  { id: 'p4', title: 'Notebook A6', category: 'Paper & Books', price: 4000, img: 'https://lh3.googleusercontent.com/jL_q3HEg65NDza1Mg-m8xZl-wwIzlf_cIocCnyDr4Au36VlGTLxLVIVHvs_2rV2RB0aDWc6ZFXdv6k97=s265-w265-h265' },
-  { id: 'p5', title: 'Stapler (Office)', category: 'Office Essentials', price: 9000, img: 'https://lh3.googleusercontent.com/30qjlkE7c1Bz6IBsifVk8XhUGPEX6YDMH_6WJC1xjsil-LPT6Sa1khnQiXG1qHAragxkyY8DGA65kcfl=s265-w265-h265' },
-  { id: 'p6', title: 'Mathematical Set', category: 'School Supplies', price: 3000, img: 'https://lh3.googleusercontent.com/-eAulxTpNAqfW5u1qHLIR4PcpWw9DQImdyQ0-mYw9l_KUHQ_7rk71wsJPirkY_eNcd-cNJPAbgeGuDAx=s265-w265-h265' },
-  { id: 'p7', title: 'Dictionary', category: 'Books', price: 15000, img: 'https://lh3.googleusercontent.com/oIELgOByVWUTibfQmwx_s2yn2952vaUOl4vHm5yQnqiV42kywbaQF9ZNjXxw7aRzqtCC-l0zwYSfGkaf=s265-w265-h265' },
-  { id: 'p8', title: 'Counter Book Q2', category: 'Books & Records', price: 2500, img: 'https://lh3.googleusercontent.com/mcY6td427pqfF-uPPowVfpL6DFV2_nmBrFMBKNN2FaZVMh1ROgHMIn_RxPwIxsvuChk20ui5LIdbF2CK=s265-w265-h265' },
-  { id: 'p9', title: 'Counter Book Q3', category: 'Books & Records', price: 3000, img: 'https://lh3.googleusercontent.com/Whcv6meJgFhaTv8qDTmKEahsiikXhV1jYLaxw8cqC-8wxrWZPzlH_qRvprmKMYfIcgKHqxQiDpoBLuIv=s265-w265-h265' },
-  { id: 'p10', title: 'Soltep Small', category: 'Stationery Accessories', price: 500, img: 'https://lh3.googleusercontent.com/9Rxe01ELTiCvlcKf7LjEcJeyV-uTtJ-u_joZnCEhIU9cYMuycDl3rfpaJ_WNYfqSCp43XNY6fEn0ekj5=s265-w265-h265' },
-  { id: 'p11', title: 'Soltep Medium', category: 'Stationery Accessories', price: 3000, img: 'https://lh3.googleusercontent.com/1BwACSa68ShRQcf7rdM1S7T4u61MQGMtuSvBkoo2zTImaULmRpX9eTYHmU7pQubMZFTQd0scawFbwyjp=s265-w265-h265' },
-  { id: 'p12', title: 'Soltep Huge', category: 'Stationery Accessories', price: 5000, img: 'https://lh3.googleusercontent.com/C71vOlKwCOAKPkXPV5TmJg4HNqWEpckhq002pij5KiwReoa3Gv8BG-kBcdw-azHG9z7Hck07TmE0GLC5=s265-w265-h265' },
-  { id: 'p13', title: 'File Small', category: 'Office Essentials', price: 2000, img: 'https://lh3.googleusercontent.com/EhjJDROtgg76ZPgJAynushEwZ4f9DprSecDffG22GeOj3lBdf0gIB3NBmnBakRzLdf0wBkkgL6PfzAUW=s265-w265-h265' },
-  { id: 'p14', title: 'File Medium', category: 'Office Essentials', price: 3000, img: 'https://lh3.googleusercontent.com/hUNHu5MOqPVMILuYP7cqJm4d1wwOcYi7HRiwHac2P39VzOTyKhD0gBp7sNI3vTNp11QSIL68OwU72y2L=s265-w265-h265' },
-  { id: 'p15', title: 'File Huge', category: 'Office Essentials', price: 4000, img: 'https://lh3.googleusercontent.com/GHGfe5uGeuX2t5dabzihdYFh_nQWS_ZdGRgTrkSqi4sC8Z7if5HM_sHQr0f8cf21FG8ZFWQHMaGFm0lI=s265-w265-h265' },
-  { id: 'p16', title: 'Frames', category: 'Decorations', price: 7000, img: 'https://lh3.googleusercontent.com/3N8O1V9puLxbuVqboeayGupnE0xz-hlAPcJRS2OqH5uHYUlhZFiKuMbnJTtEnfSYYlj0uuL7y2nF6A09=s265-w265-h265' },
-  { id: 'p17', title: 'Exercise Book Small', category: 'Books & Records', price: 800, img: 'https://lh3.googleusercontent.com/puiZmN4uD-EaFxOk9JNBe3ZVRAn1YykyubaTq6mQDukHySmS3EOY6RPLdTpnqTadY86e9V2QlA5XXMxy=s265-w265-h265' },
-  { id: 'p18', title: 'Exercise Book Medium', category: 'Books & Records', price: 1200, img: 'https://lh3.googleusercontent.com/v97Lyl5IIP1FU1BiEhZt1hYKVSQUnq4s2B4bg9y6T2GBZEGsjpUeV8vRMSTy2QL1aF2oBRWHJFgGGibB=s265-w265-h265' },
-  { id: 'p19', title: 'Exercise Book Large', category: 'Books & Records', price: 1500, img: 'https://lh3.googleusercontent.com/tzQMntkcQzXE38qDOcO1oUObwUsq9Tsb5PCzZFbINp5fyXdpQW2ZVdbSniB6Tk_FLcy-82UR38o43lMW=s265-w265-h265' },
-  { id: 'p20', title: 'Black Marker', category: 'Writing & Drawing', price: 500, img: 'https://lh3.googleusercontent.com/hR8jiqkSCw-4Blrqp6fo9NCL7TXkWD6xzYj7kyM5GnAitsdDxzN-G5dWQoSP4IWTxZdmkuFndpxn52v6=s265-w265-h265' }
+  { id: 'p1', title: 'Blue Ballpoint Pen', category: 'Writing & Drawing', price: 120, img: 'products/pen-blue.jpg' },
+  { id: 'p2', title: 'A4 Paper Ream (500 sheets)', category: 'Paper & Books', price: 1500, img: 'products/a4-ream.jpg' },
+  { id: 'p3', title: 'Notebook A5', category: 'Paper & Books', price: 300, img: 'products/a5-notebook.jpg' },
+  { id: 'p4', title: 'Black Marker', category: 'Writing & Drawing', price: 250, img: 'products/marker.jpg' },
+  { id: 'p5', title: 'Stapler (Office)', category: 'Office Essentials', price: 800, img: 'products/stapler.jpg' }
 ];
 
 function $(s){return document.querySelector(s)}
